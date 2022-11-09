@@ -7,8 +7,8 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  generacionCarta();
-  document.querySelector("#btn").addEventListener("click", generacionCarta);
+  cardGenerator();
+  document.querySelector("#btn").addEventListener("click", cardGenerator);
 };
 
 const symbol = ["corazon", "diamante", "pica", "trebol"];
@@ -66,7 +66,7 @@ function asignarPinta(array) {
 function asignarValor(array) {
   numero.innerHTML = array[1];
 }
-function generacionCarta() {
+function cardGenerator() {
   let carta = eleccionCarta(symbol, valores);
   asignarColor(carta);
   asignarPinta(carta);
